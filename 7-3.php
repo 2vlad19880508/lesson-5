@@ -1,26 +1,30 @@
 <h1>Вариант 1 (через switch)</h1>
 <?php
-$month = 4;
+$month = 12;
 
 // через switch
 switch ($month) {
-    case ($month <= 3):
+    case ($month <= 2):
 		$result = 'зима';
         echo $result;
         break;
-    case ($month <= 6):
+    case ($month <= 5):
         $result = 'весна';
         echo $result;
         break;
-    case ($month <= 9):
+    case ($month <= 8):
         $result = 'лето';
         echo $result;
         break;	
-	case ($month <= 12):
+	case ($month <= 11):
         $result = 'осень';
         echo $result;
         break;	
-	case ($month):
+	case ($month == 12):
+        $result = 'зима';
+        echo $result;
+        break;	
+	default:
 		$result = "введено неверное значение";
         echo $result;
         break;	
@@ -31,17 +35,20 @@ switch ($month) {
 
 <?php 
 //через if
-if ($month <= 3) {
+if ($month <= 2) {
         $result = 'зима';
         echo $result;
-} elseif ($month <= 6) {
+} elseif ($month <= 5) {
         $result = 'весна';
         echo $result;
-} elseif ($month <= 9) {
+} elseif ($month <= 8) {
         $result = 'лето';
         echo $result;
-} elseif ($month <= 12) {
+} elseif ($month <= 11) {
         $result = 'осень';
+        echo $result;
+} elseif ($month == 12) {
+        $result = 'зима';
         echo $result;
 } else {
 	echo "введено неверное значение";

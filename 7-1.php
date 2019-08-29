@@ -20,7 +20,7 @@ switch ($num) {
         $result = 'осень';
         echo $result;
         break;
-	case 5:
+	default:
         echo "num не равно 1,2,3,4";
         break;
 } ?>

@@ -16,7 +16,7 @@ switch ($day) {
         $result = 'третья декада';
         echo $result;
         break;	
-	case ($day):
+	default:
 		$result = "введено неверное значение";
         echo $result;
         break;	
